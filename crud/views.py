@@ -52,7 +52,7 @@ def update(request,id):
          return redirect('index')
 
     return render(request, 'index.html')
-
+0
 def delete(request,id ):
     emp =Employees.objects.filter(id=id).delete()
     context = { 'emp':emp }
